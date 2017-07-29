@@ -16,7 +16,9 @@ from tqdm import tqdm
 import midi_manipulation
 
 import os
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 
 def get_songs(path):
     files = glob.glob('{}/*.mid*'.format(path))
